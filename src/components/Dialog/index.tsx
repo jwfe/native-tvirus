@@ -6,7 +6,8 @@
 import React, { ReactElement } from 'react';
 import {
     PixelRatio,
-    TextStyle
+    TextStyle,
+    View
 } from 'react-native';
 import dialogStyles from './styles'
 import variables from '../../common/styles/variables'
@@ -26,6 +27,8 @@ export default class Dialog extends React.Component {
     }
     
     render () {
-        return null
+        return (
+            <View></View>
+        )
     }
 }
