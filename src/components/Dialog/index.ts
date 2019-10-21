@@ -5,12 +5,8 @@
 
 import React, { ReactElement } from 'react';
 import {
-    View,
-    Text,
-    TouchableOpactity,
     PixelRatio,
-    TextStyle,
-    ViewStyle
+    TextStyle
 } from 'react-native';
 import dialogStyles from './styles'
 import variables from '../../common/styles/variables'
@@ -24,7 +20,7 @@ interface Operation {
     onPress: Function
 }
 
-export default class Dialog extends React.Components{
+export default class Dialog extends React.Component {
     constructor(props) {
         super(props);
     }

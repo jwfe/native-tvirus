@@ -14,7 +14,6 @@ yarn-error.log*
 *.sublime-workspace
 
 package-lock.json
-yarn.lock
 node_modules
 ios
 android
