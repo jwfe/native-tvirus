@@ -1,7 +1,6 @@
 {
   "name": "native-tvirus",
-  "version": "0.0.1",
-  "private": true,
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -29,5 +28,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "repository": "https://github.com/jwfe/native-tvirus"
 }

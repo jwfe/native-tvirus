@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   Animated,
   Dimensions,
-  StyleSheet,
   ScrollView,
   ViewStyle
 } from 'react-native'
