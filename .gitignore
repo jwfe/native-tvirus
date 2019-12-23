@@ -83,3 +83,9 @@ typings/
 
 # next.js build output
 .next
+#rn
+.flowconfig
+.buckconfig
+.gitattributes
+.watchmanconfig
+
