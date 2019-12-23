@@ -7,15 +7,16 @@
  */
 
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import Dialog from './src/components/Dialog/index';
-
-
+import {StyleSheet, View} from 'react-native';
+import Icon from './src/components/Icon';
+import Button from './src/components/Button'
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Dialog></Dialog>
+        <Button>
+            Fuck
+        </Button>
       </View>
     );
   }

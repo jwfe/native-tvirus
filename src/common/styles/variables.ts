@@ -1,11 +1,14 @@
 /**
  * @file varables.ts
  * @author bikedawuwang
+ * @description 公共样式与品牌色
 */
 
 
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 
+
+// 文字色调
 const jwfeFontColor = {
     jwfeMainFontColor: '#333333',
     jwfeSecondaryFontColor: '#666666',
@@ -13,9 +16,11 @@ const jwfeFontColor = {
     jwfeDarkFontColor: '#cccccc',
     jwfeLinkColor: '#108ee9',
     jwfeEmphasizeFontColor: '#f78941',
-    jwfeCardFontColor: '#404763'
+    jwfeCardFontColor: '#404763',
+    jwfeWhiteBase: '#fff'
 }
 
+// 情感色
 const jwfeEmotionalColor = {
     jwfeMainFontColor: '#333333',
     jwfeSecondaryFontColor: '#666666',
@@ -26,6 +31,7 @@ const jwfeEmotionalColor = {
     jwfeCardFontColor: '#404763'
 }
 
+// 间距
 const jwfeSpacing = {
     // 水平间距
     jwfeHSpacingS: 4,
@@ -44,13 +50,15 @@ const jwfeSpacing = {
     jwfeVSpacingX4L: 20
 }
 
+// 圆角尺寸
 const jwfeRadius = {
     jwfeRadiusXS: 2,
     jwfeRadiusS: 4,
     jwfeRadiusM: 6,
     jwfeRadiusL: 8
-  }
+}
 
+// 字号
 const jwfeFontSize = {
     jwfeFontSizeXS: 10,
     jwfeFontSizeS: 12,
@@ -63,11 +71,32 @@ const jwfeFontSize = {
     jwfeFontSizeX5L: 28
 }
 
+// 边框
 const jwfeBorder = {
     jwfeBorderWidth: StyleSheet.hairlineWidth,
-    jwfeBorderColor: '#F5F5F5',
-    jwfeBorderColorDark: '#e5e5e5',
-    jwfeBorderColorDarker: '#d5d5d5'
+    jwfeBorderColor: '#dadada',
+    jwfeBorderColorDivision: '#ebebeb'
+}
+
+const jwfeOpacity = 0.3
+
+// 按钮组件
+const button = {
+    buttonEnableAnimated: Platform.OS === 'ios',
+    buttonBorderRadius: jwfeRadius.jwfeRadiusXS,
+    buttonActiveOpacity: jwfeOpacity,
+
+    buttonLFontSize: jwfeFontSize.jwfeFontSizeXL,
+    buttonLHSpacing: 50,
+    buttonLVSpacing: 14,
+
+    buttonMFontSize: jwfeFontSize.jwfeFontSizeL,
+    buttonMHSpacing: 46,
+    buttonMVSpacing: 12,
+
+    buttonSFontSize: jwfeFontSize.jwfeFontSizeM,
+    buttonSHSpacing: jwfeSpacing.jwfeHSpacingXL,
+    buttonSVSpacing: 8
 }
 
 const variables: any = {
@@ -76,7 +105,9 @@ const variables: any = {
     ...jwfeSpacing,
     ...jwfeRadius,
     ...jwfeFontSize,
-    ...jwfeBorder
+    ...jwfeBorder,
+
+    ...button
 }
 
 function useTheme(args = {}) {

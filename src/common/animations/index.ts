@@ -1,5 +1,6 @@
 import { Animated, Easing } from 'react-native'
 
+// TODO: 之后替换成更加强大的动画库
 class CommonAnimated {
     state: any
     animated: any
